@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.view.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sendfile"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#13c41c"
+        app:popupTheme="@android:style/ThemeOverlay.Material.Light"
+        app:theme="@android:style/ThemeOverlay.Material.Dark"
+        app:title="智慧田园" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="空气"
+        android:textSize="14dp"
+        android:background="#13c41c"
+        android:textColor="#fff" />
+    <Space
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RadioGroup
+        android:paddingTop="4dp"
+        android:background="#13c41c"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/navi_radiogroupofair">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="温度"
+            android:drawableTop="@drawable/ic_abc_image_hump"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_airtemp" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="湿度"
+            android:drawableTop="@drawable/ic_abc_image_hump"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_airhump" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="矿物"
+            android:drawableTop="@drawable/ic_abc_image_hump"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_airkuangwu" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="土壤"
+        android:textSize="14dp"
+        android:background="#13c41c"
+        android:textColor="#fff" />
+    <Space
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RadioGroup
+        android:paddingTop="4dp"
+        android:background="#13c41c"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/navi_radiogroupofearth">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="温度"
+            android:drawableTop="@drawable/ic_abc_image_hump"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_earthtemp" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="湿度"
+            android:drawableTop="@drawable/ic_abc_image_hump"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_earthhump" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="光照"
+            android:drawableTop="@drawable/ic_abc_image_hump"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_earthlight" />
+    </RadioGroup>
+    <RadioGroup
+        android:paddingTop="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/navi_radiogroupofcotroler">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="温度"
+            android:drawableTop="@drawable/ic_abc_image_fengsanl3"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_dengpao" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="湿度"
+            android:drawableTop="@drawable/ic_abc_image_deng3"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_fengsan" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="光照"
+            android:drawableTop="@drawable/ic_abc_image_woter"
+            android:textColor="#fff"
+            android:button="@null"
+            android:textSize="14sp"
+            android:id="@+id/betton_shuibeng" />
+    </RadioGroup>
+
+</LinearLayout>
